@@ -41,7 +41,6 @@ Typelate software is a set of tools for Gophers who want to build hypermedia-dri
 The Typelate ecosystem is designed so the tools **stand alone** but work best together:
 
 - **`muxt`** generates routes and glue code from your templates.
-- **`check`** analyzes those templates and endpoints for type-safety.
 - **`dom`** helps you test the HTML your app actually returns.
 
 Together, they form a workflow that lets you **ship Go web apps with confidence** — without leaving the comfort of the standard library.

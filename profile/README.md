@@ -22,6 +22,8 @@ Typelate software is a set of tools for Gophers who want to build hypermedia-dri
 
 Use `muxt` when you want **type-safe, maintainable hypermedia routing**.
 
+See how you can use Muxt to generate routes: https://github.com/crhntr/muxt-example-htmx-sortable/blob/main/internal/hypertext/templates/list.gohtml
+
 ### [**dom**](https://github.com/typelate/dom)
 *A Go implementation of the Document Object Model (DOM).*
 
@@ -30,6 +32,8 @@ Use `muxt` when you want **type-safe, maintainable hypermedia routing**.
 - Long battle-tested in real-world projects.
 
 Use `dom` to **inspect and assert on HTML** without regex hacks.
+
+See how you can make assertions on HTTP responses here: https://github.com/typelate/dom/blob/main/examples/blog/internal/hypertext/template_test.go
 
 ## How They Fit Together
 

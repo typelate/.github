@@ -5,8 +5,6 @@ Thank you for navigating to **Typelate** — hypermedia power tools for professi
 I build libraries that make it safeer, faster, and more effective to **draft, iterate, and refactor** HTML-driven web apps in Go.  
 If you care about strong types, safe refactoring, and hypermedia as an application architecture, you’re in the right place.
 
----
-
 ✨ What is Typelate?
 Building production Go systems, the same pain points kept surfacing:
 
@@ -16,8 +14,6 @@ Building production Go systems, the same pain points kept surfacing:
 
 Typelate solves these problems.
 It’s a set of tools for Gophers who want to build hypermedia-driven applications (HDAs) with confidence.
-
----
 
 ## 📦 Core Projects
 
@@ -30,8 +26,6 @@ It’s a set of tools for Gophers who want to build hypermedia-driven applicatio
 
 👉 Use `check` when you want (highly customized) **safer refactoring** of Go templates.
 
----
-
 ### [**dom**](https://github.com/typelate/dom)
 *A Go implementation of the Document Object Model (DOM).*
 
@@ -40,8 +34,6 @@ It’s a set of tools for Gophers who want to build hypermedia-driven applicatio
 - Long battle-tested in real-world projects.
 
 👉 Use `dom` to **inspect and assert on HTML** without regex hacks.
-
----
 
 ### [**muxt**](https://github.com/typelate/muxt)
 *Code generation for hypermedia routes.*
@@ -53,8 +45,6 @@ It’s a set of tools for Gophers who want to build hypermedia-driven applicatio
 
 👉 Use `muxt` when you want **type-safe, maintainable hypermedia routing**.
 
----
-
 ## 🔗 How They Fit Together
 
 The Typelate ecosystem is designed so the tools **stand alone** but work best together:
@@ -65,7 +55,11 @@ The Typelate ecosystem is designed so the tools **stand alone** but work best to
 
 Together, they form a workflow that lets you **ship Go web apps with confidence** — without leaving the comfort of the standard library.
 
----
+While not required, I also use the following dependencies and I know these additional tools work well with `muxt` and `dom`:
+- https://github.com/stretchr/testify - for test assertions
+- https://docs.sqlc.dev - for type-safe database interactions
+- https://github.com/maxbrunsfeld/counterfeiter - for test double generation
+- https://htmx.org - for more engaging user interface functionality
 
 ## Roadmap
 

@@ -1,6 +1,4 @@
-# {{T}} Typelate
-
-Thank you for navigating to **Typelate** — hypermedia power tools for professional Go developers.
+# **Typelate** has hypermedia power tools for professional Go developers.
 
 I build libraries that make maintaining HTML-driven web apps safer and easier.
 If you care about strong types, safe refactoring, and hypermedia as an application architecture, you’re in the right place.

@@ -16,15 +16,6 @@ Typelate software is a set of tools for Gophers who want to build hypermedia-dri
 
 ## Core Projects
 
-### [**dom**](https://github.com/typelate/dom)
-*A Go implementation of the Document Object Model (DOM).*
-
-- Provides DOM-like APIs for working with HTML in Go.
-- Useful for **behavior-driven testing** of HTML responses.
-- Long battle-tested in real-world projects.
-
-Use `dom` to **inspect and assert on HTML** without regex hacks.
-
 ### [**muxt**](https://github.com/typelate/muxt)
 *Code generation for hypermedia routes.*
 
@@ -34,6 +25,15 @@ Use `dom` to **inspect and assert on HTML** without regex hacks.
 - Generates **plain, standard-library Go code** — no frameworks or hidden magic.
 
 Use `muxt` when you want **type-safe, maintainable hypermedia routing**.
+
+### [**dom**](https://github.com/typelate/dom)
+*A Go implementation of the Document Object Model (DOM).*
+
+- Provides DOM-like APIs for working with HTML in Go.
+- Useful for **behavior-driven testing** of HTML responses.
+- Long battle-tested in real-world projects.
+
+Use `dom` to **inspect and assert on HTML** without regex hacks.
 
 ## How They Fit Together
 

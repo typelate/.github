@@ -1,4 +1,4 @@
-I build libraries that make maintaining HTML-driven web apps safer and easier.
+This organization has a set of tools and libraries that make maintaining HTML-driven web apps safer and easier.
 If you care about strong types, safe refactoring, and hypermedia as an application architecture, you’re in the right place.
 
 Building production Go systems, the same pain points kept surfacing:

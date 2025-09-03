@@ -20,6 +20,9 @@ It’s a set of tools for Gophers who want to build hypermedia-driven applicatio
 ### [**check**](https://github.com/typelate/check)
 *Static analysis for Go templates.*
 
+**This is encapsulated in `muxt check`, only import it if you'd like more control.**
+In most cases, https://github.com/jba/templatecheck is better for direct use in tests.
+
 - Configurable, best-effort static analysis for `html/template` and `text/template`.
 - Modeled after the standard library’s `ExecuteTemplate`.
 - Helps you catch template/type mismatches early — before they become runtime bugs.

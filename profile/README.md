@@ -1,59 +1,42 @@
-This organization has a set of tools and libraries that make maintaining HTML-driven web apps safer and easier.
-If you care about strong types, safe refactoring, and hypermedia as an application architecture, you’re in the right place.
+Typelate is a set of open-source Go packages and utilities for developers building hypermedia-driven applications (HDAs). It addresses a common problem in web development: modern stacks often separate frontend and backend in ways that increase accidental complexity. Engineers spend more time navigating state abstractions and microservices than delivering features. Typelate publishes tools that reduce this friction, letting you reason about your application end-to-end with clarity.
 
-Building production Go systems, the same pain points kept surfacing:
+## Core Repositories
 
-- How do you test HTML endpoints in a way that’s antifragile and easy to extend?
-- How do you refactor templates safely, catching type errors before they hit runtime?
-- How do you connect routes, templates, and domain logic without boilerplate or reflection?
+### Muxt
 
-The repositories in the Typelate organization solve these problems.
-Typelate software is a set of tools for Gophers who want to build hypermedia-driven applications (HDAs) with confidence.
+[Muxt](https://github.com/typelate/muxt) provides a structured workflow for defining templates, routes, and domain logic. It enforces patterns that reduce boilerplate, simplify refactoring, and help teams ship features quickly without fragile abstractions. Muxt lets you focus on behavior rather than plumbing, reducing the hidden costs that arise from mismatched frontend/backend architectures.
 
-## Core Projects
+### DOM
 
-### [**muxt**](https://github.com/typelate/muxt)
-*Code generation for hypermedia routes.*
+[DOM](https://github.com/typelate/dom) implements the Document Object Model in Go, enabling behavior-driven testing of HTML endpoints. Instead of brittle tests that mirror convoluted frontend logic, DOM allows you to reason about rendered output directly, aligning tests with user experience. This makes refactoring safer and accelerates development cycles.
 
-- Scans `.gohtml` templates for route definitions and **generates Go handlers**.
-- Eliminates boilerplate by mapping **routes → templates → Go methods**.
-- Optional integration with `check` for **template type-checking**.
-- Generates **plain, standard-library Go code** — no frameworks or hidden magic.
+## Philosophy
 
-Use `muxt` when you want **type-safe, maintainable hypermedia routing**.
+Typelate tools aim to minimize the engineering overhead imposed by modern web architecture. They help teams:
 
-See how you can use Muxt to generate routes: https://github.com/crhntr/muxt-example-htmx-sortable/blob/main/internal/hypertext/templates/list.gohtml
+* Reduce maintenance costs by keeping dependencies minimal.
+* Expand application scope safely by making data flow explicit.
+* Accelerate development by providing tools that reflect real workflows.
+* Avoid accidental complexity from API gateways, convoluted runtime behavior, and other overengineered patterns.
 
-### [**dom**](https://github.com/typelate/dom)
-*A Go implementation of the Document Object Model (DOM).*
+In short, Typelate helps engineers ship Go web apps with confidence, focusing on meaningful work rather than plumming through convoluted layers required by modern software stacks.
 
-- Provides DOM-like APIs for working with HTML in Go.
-- Useful for **behavior-driven testing** of HTML responses.
-- Long battle-tested in real-world projects.
+## Complementary Tools
 
-Use `dom` to **inspect and assert on HTML** without regex hacks.
+These packages integrate well with other Go ecosystem tools:
 
-See how you can make assertions on HTTP responses here: https://github.com/typelate/dom/blob/main/examples/blog/internal/hypertext/template_test.go
+* [HTMX](https://htmx.org) — interactive frontend behavior
+* [stretchr/testify](https://github.com/stretchr/testify) — test assertions
+* [sqlc](https://docs.sqlc.dev) — type-safe database queries
+* [counterfeiter](https://github.com/maxbrunsfeld/counterfeiter) — test double generation
 
-## How They Fit Together
-
-The Typelate ecosystem is designed so the tools **stand alone** but work best together:
-
-- **`muxt`** generates routes and glue code from your templates.
-- **`dom`** helps you test the HTML your app actually returns.
-
-Together, they form a workflow that lets you **ship Go web apps with confidence** — without leaving the comfort of the standard library.
-
-While not required, I also use the following dependencies and I know these additional tools work well with `muxt` and `dom`:
-- https://github.com/stretchr/testify - for test assertions
-- https://docs.sqlc.dev - for type-safe database interactions
-- https://github.com/maxbrunsfeld/counterfeiter - for test double generation
-- https://htmx.org - for more engaging user interface functionality
+Together, they form a workflow that lets you ship Go web apps efficiently, staying close to the standard library.
 
 ## Roadmap
 
-I intend to add more tools for observability, integration testing (chromedp wrapper), and plenty of working examples.
+Future software development includes observability tools, web standards-based cache controls, a chromedp-based integration testing wrapper, and additional practical examples. Upcoming content will include video and written tutorials and essays.
 
 For updates:
-- [Follow Typelate on GitHub](https://github.com/typelate)
-- [Connect with Christopher Hunter on LinkedIn](https://linkedin.com/in/crhntr)
+
+* [Follow Typelate on GitHub](https://github.com/typelate)
+* [Connect with Christopher Hunter on LinkedIn](https://linkedin.com/in/crhntr)

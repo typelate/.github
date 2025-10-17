@@ -21,7 +21,7 @@ Typelate tools aim to minimize the engineering overhead imposed by modern web ar
 
 In short, Typelate helps engineers ship Go web apps with confidence, focusing on meaningful work rather than plumming through convoluted layers required by modern software stacks.
 
-## Complementary Tools
+## Open Source Tools
 
 These packages integrate well with other Go ecosystem tools:
 

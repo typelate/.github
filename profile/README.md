@@ -1,40 +1,28 @@
-Typelate is a set of open-source Go packages and utilities for developers building hypermedia-driven applications (HDAs). It addresses a common problem in web development: modern stacks often separate frontend and backend in ways that increase accidental complexity. Engineers spend more time navigating state abstractions and microservices than delivering features. Typelate publishes tools that reduce this friction, letting you reason about your application end-to-end with clarity.
+Typelate provides hypermedia power tools for Go developers building [hypermedia-driven applications (HDAs)](https://htmx.org/essays/hypermedia-driven-applications/). It has been designed to make drafting, iterating, and refactoring hypermedia safe, fast, and effective.
 
-## Core Repositories
-
-### Muxt
-
-[Muxt](https://github.com/typelate/muxt) provides a structured workflow for defining templates, routes, and domain logic. It enforces patterns that reduce boilerplate, simplify refactoring, and help teams ship features quickly without fragile abstractions. Muxt lets you focus on behavior rather than plumbing, reducing the hidden costs that arise from mismatched frontend/backend architectures.
+## Development Updates
 
 ### DOM
 
-[DOM](https://github.com/typelate/dom) implements the Document Object Model in Go, enabling behavior-driven testing of HTML endpoints. Instead of brittle tests that mirror convoluted frontend logic, DOM allows you to reason about rendered output directly, aligning tests with user experience. This makes refactoring safer and accelerates development cycles.
+[DOM](https://github.com/typelate/dom) implements a useful subset of the Document Object Model specification in Go. It is helpful for writing behavior-driven tests for HTML endpoints. The package works well with LLMs in your IDE because it is based on a well-known specification.
 
-## Philosophy
+This has been used in personal and professional projects for years under [github.com/crhntr/dom](https://github.com/crhntr/dom).
 
-Typelate tools aim to minimize the engineering overhead imposed by modern web architecture. They help teams:
+### Muxt
 
-* Reduce maintenance costs by keeping dependencies minimal.
-* Expand application scope safely by making data flow explicit.
-* Accelerate development by providing tools that reflect real workflows.
-* Avoid accidental complexity from API gateways, convoluted runtime behavior, and other overengineered patterns.
+[Muxt](https://github.com/typelate/muxt) is a code generator and static analysis toolkit for server-side rendered HTML.
 
-In short, Typelate helps engineers ship Go web apps with confidence, focusing on meaningful work rather than plumming through convoluted layers required by modern software stacks.
+## Example Projects
 
-## Complimentary Tools
+All example apps use Muxt, HTMX, and Postgres.
 
-Muxt and DOM integrate well with these libraries:
-
-* [HTMX](https://htmx.org) — interactive frontend behavior
-* [stretchr/testify](https://github.com/stretchr/testify) — test assertions
-* [sqlc](https://docs.sqlc.dev) — type-safe database queries
-* [counterfeiter](https://github.com/maxbrunsfeld/counterfeiter) — test double generation
-
-Together, they form a workflow that lets you ship Go web apps efficiently, staying close to the standard library.
+* [No -tools Example](https://github.com/typelate/no-tools-example) — Can be used as a template for new projects. It does not add muxt as a module dependency.
+* [Sortable Example](https://github.com/typelate/sortable-example) — A more sophisticated example that includes migrations, database transactions, and more interactivity.
+* [HTMX Template](https://github.com/typelate/htmx-template) — A simple app template repository.
 
 ## Roadmap
 
-Future software development includes observability tools, web standards-based cache controls, a chromedp-based integration testing wrapper, and additional practical examples. Upcoming content will include video and written tutorials and essays.
+An integrated product adding value on top of Muxt and DOM is planned for early 2026.
 
 For updates:
 
